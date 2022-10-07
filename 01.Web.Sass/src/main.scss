@@ -1,0 +1,98 @@
+// :root {--border: 1px solid red; }
+// @use 'button';
+@import 'config';
+@import 'button';
+@import 'utils';
+
+
+* {
+    // padding: 0;
+    // margin: 0;
+    @include reset-pm();
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-primary;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: $color-secondary;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: size(6);
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: size(3);
+}
+
+.container {
+    background-color: #fff;
+    margin: 100px auto;
+    width: 1280px;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    // background-image: url(../../assets/bg.jpg); // Ruta saliendo de carpeta css en public
+    background-image: url(/01.Web.Sass/public/assets/bg.jpg);
+    background-size: 100% 100%;
+}
+
+// ANIDACIÓN
+
+ul {
+    // padding: 0;
+    // margin: 0;
+    @include reset-pm();
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li {
+        a {
+            @include btn($background-color: $color-terciary, $color: $color-secondary, $bold: 'true');
+
+            &:hover {
+                @include btn($color-secondary, $color-terciary, 'false');
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+}
+
+header {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+// PRICES
+
+.prices {
+    .prev {
+        font-size: size(2);
+        font-weight: bolder;
+        color: $color-font;
+        text-decoration: line-through;
+    }
+
+    .now {
+        font-size: size(5);
+        font-weight: bolder;
+    }
+}
+
+
+
+
+
+
+// https://www.youtube.com/watch?v=I39yxJUgOuA

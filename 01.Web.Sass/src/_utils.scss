@@ -1,0 +1,77 @@
+// Funciones
+@function size($value) {
+    @return $value * $unit;
+}
+
+// Mixin - Permite crear bloques de estilos para reutilizar
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+// ROW
+
+.row {
+    display: flex;
+    align-items: center;
+
+    .col {
+        width: 50%;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .col-70 {
+        width: 70%;
+    }
+}
+
+
+
+.m-auto {
+    margin: 0 auto;
+}
+
+// Loop - margin
+
+@for $i from 1 to $limit {
+
+    // m-1, m-2...
+    .m-#{$i} {
+        margin: $i * $unit;
+    }
+}
+
+// Loop - padding
+
+@for $i from 1 to $limit {
+
+    // p-1, p-2...
+    .p-#{$i} {
+        padding: $i * $unit;
+    }
+}
+
+// Loop - padding y
+
+@for $i from 1 to $limit {
+
+    // py-1, py-2...
+    .py-#{$i} {
+        padding: $i * $unit 0;
+    }
+}
+
+// Loop - width
+
+@for $i from 1 to 4 {
+
+    // w-1, w-2...
+    .w-#{$i} {
+        width: $i * 25%;
+    }
+}
