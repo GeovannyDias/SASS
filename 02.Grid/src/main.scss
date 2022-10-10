@@ -1,0 +1,67 @@
+// Row
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem; // = 1rem = 16px
+    padding: 0.5rem 0; // = 0.5rem = 8px
+    // border: 1px solid red;
+}
+
+// Cols
+@for $i from 1 through 12 {
+    .grid-#{$i} {
+        grid-column: span ($i);
+        // border: 1px solid green;
+    }
+}
+
+// Cols - Responsive - Grid
+
+@media only screen and (min-width: 576px) {
+    @for $i from 1 through 12 {
+        .grid-xs-#{$i} {
+            grid-column: span ($i);
+            // border: 1px solid blue;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @for $i from 1 through 12 {
+        .grid-md-#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    @for $i from 1 through 12 {
+        .grid-lg-#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    @for $i from 1 through 12 {
+        .grid-xl-#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// https://sass-lang.com/documentation/at-rules/control/for
+// The @for rule, written 
+// @for <variable> from <expression> to <expression> { ... } or 
+// @for <variable> from <expression> through <expression> { ... },
+// If to is used, the final number is excluded; if through is used, it's included.
+
+// Reference
+// https://platzi.com/tutoriales/1229-css-grid-layout/3614-sistema-de-grillas-al-estilo-bootstrap-con-css-grid-y-sass/
