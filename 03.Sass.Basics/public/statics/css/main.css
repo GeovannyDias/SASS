@@ -1,0 +1,64 @@
+body {
+  font: "Prelo", sans-serif;
+  color: #4A4A50;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.alert-info {
+  padding: 15px;
+  border-radius: 5px;
+  background: LightGray;
+  box-shadow: 0 0 1px rgba(211, 211, 211, 0.25);
+  color: #fff;
+}
+
+.alert-danger {
+  padding: 15px;
+  border-radius: 5px;
+  background: red;
+  box-shadow: 0 0 1px rgba(255, 0, 0, 0.25);
+  color: #fff;
+}
+
+.alert-success {
+  padding: 15px;
+  border-radius: 5px;
+  background: LightGreen;
+  box-shadow: 0 0 1px rgba(144, 238, 144, 0.25);
+  color: #fff;
+}
+
+/* This CSS will print because %message-shared is extended. */
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+/*# sourceMappingURL=main.css.map */
