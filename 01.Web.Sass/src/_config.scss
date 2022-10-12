@@ -7,3 +7,15 @@ $box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
 
 $limit: 10;
 $unit: 8px;
+
+
+
+
+
+
+
+// La unidad rem tiene como referencia de medida el font-size del elemento root, la 
+// etiqueta <html> (en inglés sería como "root em").
+// La unidad em tiene como referencia de medida el font-size del elemento actual.
+// https://www.youtube.com/watch?v=Sgf4HEAW-gQ&t=545s
+// https://lenguajecss.com/css/modelo-de-cajas/unidades-css/
