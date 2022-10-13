@@ -2,7 +2,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1rem; // = 1rem = 16px
+    gap: 1rem; // = 1rem = 16px
     padding: 0.5rem 0; // = 0.5rem = 8px
     // border: 1px solid red;
 }
@@ -17,6 +17,7 @@
 
 // Cols - Responsive - Grid
 
+// Extra small (xs)
 @media only screen and (min-width: 576px) {
     @for $i from 1 through 12 {
         .grid-xs-#{$i} {
@@ -26,6 +27,7 @@
     }
 }
 
+// Medium (md)
 @media screen and (min-width: 768px) {
     @for $i from 1 through 12 {
         .grid-md-#{$i} {
@@ -34,6 +36,7 @@
     }
 }
 
+// Large (lg)
 @media (min-width: 992px) {
     @for $i from 1 through 12 {
         .grid-lg-#{$i} {
@@ -42,6 +45,7 @@
     }
 }
 
+// Extra large (xl)
 @media (min-width: 1200px) {
     @for $i from 1 through 12 {
         .grid-xl-#{$i} {
@@ -65,3 +69,16 @@
 
 // Reference
 // https://platzi.com/tutoriales/1229-css-grid-layout/3614-sistema-de-grillas-al-estilo-bootstrap-con-css-grid-y-sass/
+
+// Deprecated grid-gap
+// Browsers still support these deprecated grid-* properties
+// https://css-tricks.com/minding-the-gap/
+
+// Grid options
+// Extra small (xs) → <576px
+// Small (sm) → ≥576px
+// Medium (md) → ≥768px
+// Large (lg) → ≥992px
+// Extra large (xl) → ≥1200px
+// Extra extra large (xxl) → ≥1400px
+
