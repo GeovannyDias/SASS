@@ -75,3 +75,45 @@
         width: $i * 25%;
     }
 }
+
+
+
+// With Maps
+
+/** spacer-variables-maps **/
+
+// $spacer: 1rem !default;
+// $spacers: (
+//     0: 0,
+//     1: $spacer * .25,
+//     2: $spacer * .5,
+//     3: $spacer,
+//     4: $spacer * 1.5,
+//     5: $spacer * 3,
+//     ) !default;
+
+
+/** margin with map **/
+
+// .m-auto {
+//     margin: 0 auto;
+// }
+
+// @each $key, $value in $spacers {
+//     .m-#{$key} {
+//         margin: $value;
+//     }
+// }
+
+
+// /** padding with map **/
+
+// .p-auto {
+//     padding: 0 auto;
+// }
+
+// @each $key, $value in $spacers {
+//     .p-#{$key} {
+//         padding: $value;
+//     }
+// }
