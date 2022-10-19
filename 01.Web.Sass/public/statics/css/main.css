@@ -172,6 +172,32 @@
   width: 75%;
 }
 
+/** spacer-variables-maps **/
+.m-test-0 {
+  margin: 0;
+}
+
+.m-test-1 {
+  margin: 0.25rem;
+}
+
+.m-test-2 {
+  margin: 0.5rem;
+}
+
+.m-test-3 {
+  margin: 1rem;
+}
+
+.m-test-4 {
+  margin: 1.5rem;
+}
+
+.m-test-5 {
+  margin: 3rem;
+}
+
+/** margin with map **/
 * {
   padding: 0;
   margin: 0;

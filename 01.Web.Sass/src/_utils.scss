@@ -77,20 +77,29 @@
 }
 
 
-
 // With Maps
+// https://sass-lang.com/documentation/at-rules/control/each
 
 /** spacer-variables-maps **/
 
-// $spacer: 1rem !default;
-// $spacers: (
-//     0: 0,
-//     1: $spacer * .25,
-//     2: $spacer * .5,
-//     3: $spacer,
-//     4: $spacer * 1.5,
-//     5: $spacer * 3,
-//     ) !default;
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    ) !default;
+
+
+// Test Each with Map
+
+@each $key, $value in $spacers {
+    .m-test-#{$key} {
+        margin: $value;
+    }
+}
 
 
 /** margin with map **/
@@ -104,7 +113,6 @@
 //         margin: $value;
 //     }
 // }
-
 
 // /** padding with map **/
 
